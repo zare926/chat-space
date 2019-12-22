@@ -2,17 +2,6 @@
   box-sizing: border-box;
 }
 
-@mixin sort{
-  display: flex;
-  justify-content: space-between;
-}
-
-$white: #ffffff;
-$skyblue: #38aef0;
-$black: #333333;
-$gray: #999999;
-
-
 .side__main{
   width: 300px;
   float: left;
