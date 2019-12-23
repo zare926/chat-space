@@ -1,0 +1,34 @@
+.chat__main
+  .chat__main--header
+    .chat__main--header_left
+      .chat__main--header_left_group_name
+        TEST
+      .chat__main--header_left_member_name
+        Member : test
+    .chat__main--header_right
+      = link_to "#", class:"chat__main--header_right_btn" do
+        Edit
+  .chat__main--contents
+    .chat__main--contents_name_created_at
+      .chat__main--contents_member_name
+        テスト
+      .chat__main--contents_created_at
+        2019/12/21(Sat) 23:52:01
+    .chat__main--contents_message
+      おはようございます。
+    .chat__main--contents_name_created_at
+      .chat__main--contents_member_name
+        テスト2
+      .chat__main--contents_created_at
+        2019/12/21(Sat) 23:52:10
+    .chat__main--contents_message
+      こんばんわ
+  .chat__main--form
+    .new_input
+      .new_input_area
+        %input.new_input_message{placeholder: "type a message"}
+          .input-box_area
+            %label{class: "input-box__image"}
+              = fa_icon 'image', class: 'icon'
+              %input{class:"input-btn", type: "file"}
+      %input{class: "send-btn" , type: "submit", value: "Send"}
