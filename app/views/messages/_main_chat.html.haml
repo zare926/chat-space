@@ -6,9 +6,8 @@
       .chat__main--header_left_member_name
         Member : test
     .chat__main--header_right
-      %a{href: "#"}
-        .chat__main--header_right_btn
-          Edit
+      = link_to "#", class:"chat__main--header_right_btn" do
+        Edit
   .chat__main--contents
     .chat__main--contents_name_created_at
       .chat__main--contents_member_name
@@ -27,7 +26,7 @@
   .chat__main--form
     .new_input
       .new_input_area
-        %input.new_input_message{:placeholder => "type a message"}
+        %input.new_input_message{placeholder: "type a message"}
           .input-box_area
             %label{class: "input-box__image"}
               = fa_icon 'image', class: 'icon'

@@ -49,7 +49,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+ # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'font-awesome-rails'
 gem 'haml-rails'
@@ -57,3 +57,4 @@ gem 'haml-rails'
 gem 'thor', '>= 0.20.3'
 
 gem "font-awesome-sass"
+gem 'haml-rails'
