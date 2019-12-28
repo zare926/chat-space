@@ -15,11 +15,9 @@
       height: 20px;
       width: 100%;
       @include sort;
-      &--name{
-        line-height: 20px;
-        color: white;
-        font-weight: bold;
-      }
+      color: white;
+      font-weight: bold;
+      line-height: 20px;
       &--icon{
         width: 60px;
         display: flex;
@@ -93,7 +91,7 @@
   &--contents{
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    padding: 35px 40px;
+    padding: 46px 40px;
     &_name_created_at{
       margin-bottom: 12px;
       position: relative;
@@ -118,16 +116,18 @@
       padding-bottom: 46px;
     }
   }
+
   &--form{
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    .new_input{
+    .new_message{
       display: flex;
-      &_area{
+      .input_area{
         position: relative;
         width: 100%;
-        .new_input_message{
+        .new_input_area{
+          width: 100%;
           padding:0 40px 0 10px;
           height: 50px;
           width: 100%;
@@ -139,21 +139,23 @@
           .input-box__image{
             font-size: 20px;
             cursor: pointer;
+            .icon{
+            }
             .input-btn{
               display: none;
             }
           }
         }
       }
-    .send-btn{
-      background-color: $skyblue;
-      width: 100px;
-      height: 50px;
-      margin-left: 15px;
-      color: white;
-      padding: 0 30px;
-      cursor: pointer;
-    }
+      .send-btn{
+        background-color: $skyblue;
+        width: 100px;
+        height: 50px;
+        margin-left: 15px;
+        color: white;
+        padding: 0 30px;
+        cursor: pointer;
+      }
     }
   }
 }
