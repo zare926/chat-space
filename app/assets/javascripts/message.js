@@ -3,7 +3,7 @@ $(function(){
     if ( message.image ) {
 
     
-      var html = `<div class='chat__main--contents_name_created_at' data-message-id=${message.id}>
+      var html = `<div class='chat__main--contents_name_created_at'  data-message-id=${message.id}>
                     <div class='chat__main--contents_member_name'>
                       ${message.user_name}
                     </div>
@@ -19,7 +19,7 @@ $(function(){
                   </div>`
                   return html;
     } else {
-      var html = `<div class='chat__main--contents_name_created_at' data-message-id=${message.id}>
+      var html = `<div class='chat__main--contents_name_created_at'  data-message-id=${message.id}>
                     <div class='chat__main--contents_member_name'>
                       ${message.user_name}
                     </div>
