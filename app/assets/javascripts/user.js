@@ -32,8 +32,6 @@ $(function(){
     let html= `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
     $(`#${userId}`).append(html);
 
-    // let html = `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
-    // $(`#${userId}`).append(html);
   }
   $('#user-search-field').on("keyup", function(){
     let input = $('#user-search-field').val();
